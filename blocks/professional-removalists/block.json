@@ -1,0 +1,29 @@
+{
+    "name": "acf/professional-removalists",
+    "title": "professional removalists Block",
+    "description": "A custom professional removalists block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "professional removalists",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "professional-removalists.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

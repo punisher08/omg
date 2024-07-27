@@ -1,0 +1,29 @@
+{
+    "name": "acf/premium-services",
+    "title": "Premium services Block",
+    "description": "A custom Premium services block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "premium services",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "premium-services.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

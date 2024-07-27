@@ -1,0 +1,29 @@
+{
+    "name": "acf/trusted-by-experts",
+    "title": " Trusted By experts Block",
+    "description": "A custom Trusted By experts block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "trusted by experts",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "trusted-by-experts.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

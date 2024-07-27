@@ -1,0 +1,97 @@
+//@import '../variables.scss';
+
+.banner-v2{
+    padding: 112px 20px;
+    // 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    // min-height: 336px;
+    min-height: 200px;
+    // add overlay before
+    position: relative;
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .container{
+        .row{
+            .grid{
+                display: grid;
+                @media screen and (max-width: 768px) {
+                    justify-items: center;
+                    
+                }
+                .breadcrumbs{
+                    display: flex;
+                    gap: 15px;
+                    color: var(--Text-alternate, #FFF);
+                    z-index: 1;
+                
+                    a{
+                        color: var(--Text-alternate, #FFF);
+                        text-decoration: none;
+
+                        /* Text sm/Semibold */
+                        font-family: $primary-font;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 20px; /* 142.857% */
+                    }
+                }
+                .inner-content{
+                    .text{
+                        color: var(--Base-White, #FFF);
+                        /* Text lg/Regular */
+                        font-family: $primary-font;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: normal;
+                        line-height: 28px; /* 155.556% */
+                        z-index: 9;
+                        position: relative;
+                        width: 70%;
+                        @media screen and (max-width: 768px){
+                            width: 100%;
+                            
+                        }
+                        p{
+                        color: var(--Base-White, #FFF);
+                        /* Text lg/Regular */
+                        font-family: $primary-font;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: normal;
+                        line-height: 28px; /* 155.556% */
+                        }
+                    }
+                    h1{
+                        color: var(--Text-alternate, #FFF);
+
+                        /* Display lg/Bold */
+                        font-family: $thirtiary-font;
+                        font-size: 48px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 60px; /* 125% */
+                        letter-spacing: -0.96px;
+                        z-index: 9;
+                        position: relative;
+                        margin-bottom: 10px;
+                        @media screen and (max-width: 768px){
+                            text-align: center;
+                            
+                        }
+                       
+                    }
+                }
+            }
+        }
+    }
+}

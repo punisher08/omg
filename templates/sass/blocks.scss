@@ -1,0 +1,159 @@
+@import './variables.scss';
+@import './blog.scss';
+
+@import './header-old.scss';
+@import './footer.scss';
+@import './blocks/banner.scss';
+@import './blocks/two-cols-section.scss';
+
+@import './blocks/complete-services.scss';
+@import './blocks/services.scss';
+
+@import './blocks/testimonials.scss';
+@import './blocks/trusted-by-experts.scss';
+@import './blocks/premium-services.scss';
+@import './blocks/request-a-quote.scss';
+@import './blocks/faq.scss';
+@import './blocks/quick-action-section.scss';
+@import './blocks/banner-v2.scss';
+@import './blocks/professional-removalists.scss';
+@import './blocks/promises.scss';
+@import './blocks/tips.scss';
+@import './blocks/tabs.scss';
+@import './blocks/full-services.scss';
+@import './blocks/steps.scss';
+@import './blocks/cards.scss';
+@import './blocks/post-archive.scss';
+@import './blocks/blog-banner.scss';
+
+
+
+.hidden{
+    display: none;
+}
+html * {
+    font-family: $primary-font;
+}
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden
+}
+.container{
+    width: 100%;    
+    max-width: 1320px;
+    margin: auto;
+    padding: 0px;
+    @media (max-width: 768px){
+        padding: 0px;
+    }
+}
+.shadow-primary{
+    box-shadow: -39px 0px #FFFFFF33;
+    border-radius: 30px;
+    transform: rotate(-10deg);
+    background: #001C5F;
+}
+.shadow{
+    box-shadow: -39px 0px #FFFFFF33;
+    border-radius: 30px;
+    transform: rotate(-10deg);
+    background: #FFFFFF33;
+    // width: 299px;
+    img{
+         transform: rotate(10deg);
+    }
+}
+h1,h2,h3,h4,h5,h6{
+    letter-spacing: -0.5px;
+}
+.google-button{
+    border-radius: 10px;
+    border-top: 5px solid #FFF;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    border-left: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: -2.564px -1.282px 10.256px 0px rgba(0, 0, 0, 0.40), 12.82px 8.974px 25.641px 0px rgba(0, 0, 0, 0.40), 12.82px 8.974px 25.641px 0px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 236px;
+    .btn-content{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    h1{
+        margin: 0;
+        color: var(--Base-White, #FFF);
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 10.256px; /* 85.469% */
+        text-align: left;
+    }
+    .ratings{
+        display: flex;
+        align-items: center;
+        padding: 5px 0px;
+        .rate-star{
+            display: flex;
+        }
+    }
+}
+
+
+// 
+
+.background-shape {
+    position: absolute;
+    top: -25px;
+    left: -75px;
+    height: 100%;
+    background-color: #001f60;
+    border-radius: 20px;
+    transform: rotate(-5deg);
+    z-index: -1;
+    width: 200%;
+    @media screen and (max-width: 768px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #001f60;
+        border-radius: 20px;
+        transform: rotate(-7deg);
+        z-index: -1;
+        width: 100%;
+    }
+}
+
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    // border-radius: 15px;
+}
+
+.image-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+// .dashed-line {
+//     position: absolute;
+//     top: 10px;
+//     left: 50%;
+//     width: 100px;
+//     height: 100px;
+//     border: 2px dashed #ffcd00;
+//     border-radius: 50%;
+//     transform: translateX(-50%) rotate(30deg);
+//     z-index: 1;
+// }

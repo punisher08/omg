@@ -1,0 +1,29 @@
+{
+    "name": "acf/banner-v2",
+    "title": "Banner-v2 Block",
+    "description": "A custom Banner-v2 block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "banner-v2",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "banner-v2.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+        "services"
+      ]
+    }
+  }
+  

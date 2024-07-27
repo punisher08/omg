@@ -1,0 +1,295 @@
+//@import '../variables.scss';
+
+.banner{
+    position: relative;
+    background: $secondary;
+    // padding-bottom: 142px;
+    padding: 20px;
+    .container{
+
+        .row{
+            padding-top: 100px;
+            @media (max-width: 768px){
+                padding: 20px;
+            }
+
+            .flex{
+                display: flex;
+                justify-content: space-between;
+                @media screen and (max-width: 992px){
+                    display: block;
+                }
+                .item{ 
+                   &:nth-child(1){
+                    width: 50%;
+                    @media screen and (max-width: 992px){
+                        display: block;
+                        width: 100%;
+                    }
+                   }
+                   &:nth-child(2){
+                    width: 50%;
+                    @media screen and (max-width: 992px){
+                        display: block;
+                        width: 100%;
+                    }
+                   }
+                   
+                    .inner-content{
+                     
+                        .headline{
+                            padding-bottom: 20px;
+
+                         
+                            h1{
+                                @media(max-width: 768px){
+                                    font-size: 40px;
+                                    line-height: 48px;
+                                }
+                                color: var(--Base-White, #FFF);
+
+                                /* Display 2xl/Bold */
+                                font-family:$thirtiary-font;
+                                font-size: 72px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 90px; /* 125% */
+                                letter-spacing: -2px;
+                                margin: 0;
+                            }
+                        }
+
+                        ._text{
+                            padding-bottom: 15px;
+                            p{
+                                // color: #fff;
+                                // font-size: 17px;
+                                // font-style: normal;
+                                // font-weight: 400;
+                                // line-height: 34px;
+                                
+                                font-family: $primary-font;
+                                margin: 0;
+                                color: var(--Base-White, #FFF);
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 34px;
+
+                            }
+                        }
+
+                        ._cta{
+                            display: flex;
+                            align-items: center;
+                            gap: 45px;
+                            padding-bottom: 90px;
+                            @media screen and (max-width: 992px){
+                                margin-top: 25px;
+                                flex-wrap: wrap;
+                                flex-direction: column-reverse;
+                                align-items: flex-start;
+                                .arrow{
+                                    display: none;
+                                }
+                                
+                            }
+
+                            button{
+                                // background: transparent;
+                                // border-top: 3px solid white;
+                                // border-left: 1px solid white;
+                                // border-bottom: 1px solid white;
+                                // border-right: 1px solid white;
+                                // border-radius: 10px;
+                                color: #fff;
+                                padding: 10.256px 16px;
+                                height: 90px;
+                                border-radius: 10px;
+                                border-top: 5px solid var(--Base-White, #FFF);
+                                border-right: 1px solid var(--Base-White, #FFF);
+                                border-bottom: 1px solid var(--Base-White, #FFF);
+                                border-left: 1px solid var(--Base-White, #FFF);
+                                background: rgba(255, 255, 255, 0.10);
+                                box-shadow: -2.564px -1.282px 10.256px 0px rgba(0, 0, 0, 0.40), 12.82px 8.974px 25.641px 0px rgba(0, 0, 0, 0.40);
+                                min-width: 235px;
+                                display: grid;
+                                justify-items: center;
+                                position: relative;
+                                transition: margin-top 0.5s ease-in-out;
+
+                                &:hover {
+                                    margin-top: -30px;
+                                }
+
+                                h1{
+                                    margin: 0;
+                                    font-size: 10px;
+                                    color: var(--Base-White, #FFF);
+                                    text-align: center;
+                                    font-family: "Plus Jakarta Sans";
+                                    font-size: 10.256px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 10.256px;
+                                }
+                                .rate-star{
+                                    display: flex;
+                                    align-items: center;
+                                }
+
+                                .btn-content{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 10px;
+
+                                    .text{
+                                        h1{
+                                            margin: 0;
+                                            color: #FDCB08;
+                                            color: var(--Primary-500, #FDCB08);
+                                            text-align: center;
+                                            font-family: "Plus Jakarta Sans";
+                                            font-size: 15.384px;
+                                            font-style: normal;
+                                            font-weight: 800;
+                                            line-height: 15.384px; /* 100% */
+                                        }
+                                    }
+                                }
+                                .see-all{
+                                    h1{
+                                        margin: 0;
+                                        font-size: 7px;
+                                        color: var(--Base-White, #FFF);
+                                        text-align: center;
+                                        font-family: "Plus Jakarta Sans";
+                                        font-size: 7.692px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal; 
+                                    }
+                                }
+                            }
+                            .arr-text{
+                                display: flex;
+                                align-items: center;
+                                gap: 24px;
+                                .just-hear{
+                                    max-width: 234px;
+                                    h4{
+                                      font-size: 37px;
+                                      color: #FDCB08;
+                                      margin: 0;
+                                      font-family:$secondary-font;
+                                    font-weight: 400;
+                                    font-style: normal;
+                                                                           
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                .img-content{
+                    position: absolute;
+                    right: 0;
+                    max-width: 736px;
+                    bottom: -5px;    
+                    @media screen and (max-width: 992px){
+                        display: block;
+                        position: relative;
+                        width: 100%;
+                        margin: auto;
+                    }      
+                        img{
+                            width: 100%;
+
+                        }
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    ._quick-action-section{
+        // width: 100%;
+        padding: 32px 48px;
+        background: #FDCB08;
+        .container{
+            .row{
+                .flex{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    @media screen and (max-width: 992px){
+                        flex-wrap: wrap;
+                    }
+                        ._headline{
+                            color: var(--Base-Black, #000);
+
+                            /* Display xs/Bold */
+                            font-family: $thirtiary-font;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 32px; /* 133.333% */
+                            letter-spacing: -0.7px;
+                            @media screen and (max-width: 768px){
+                                text-align: center;
+                            }
+                        }
+                    form{
+                        display: flex;
+                        gap: 25px;
+                        padding-bottom: 10px;
+                        @media screen and (max-width: 768px){
+                            display: grid;
+                            gap: 25px;
+                            padding-bottom: 10px;
+                            justify-items: center
+                            
+                        }
+
+                        label{
+                            display: none;
+                        }
+                      
+                        input[type="email"]{
+                            border-radius: 30px;
+                            border: 1px solid var(--Gray-300, #D0D5DD);
+                            background: var(--Base-White, #FFF);
+                            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+                            display: flex;
+                            width: 250px;
+                            padding: 10px 14px;
+                            align-items: center;
+                            gap: 8px;
+                            height: 44px;
+                        }
+                        #gform_submit_button_1{
+                            display: flex;
+                            width: 127px;
+                            height: 44px;
+                            padding: 12px 20px;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 8px;
+                            border-radius: 30px;
+                            background: var(--secondary-700, #001C5F);
+                            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+                        }
+                        .gform_footer{
+                            &.before{
+                                margin: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

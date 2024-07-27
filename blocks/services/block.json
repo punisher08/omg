@@ -1,0 +1,29 @@
+{
+    "name": "acf/services",
+    "title": " Services Block",
+    "description": "A custom Services block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "services",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "services.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

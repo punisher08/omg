@@ -1,0 +1,166 @@
+.pum-theme-2366, .pum-theme-default-theme{
+    background-color: rgb(10 9 9 / 59%);
+}
+#popmake-2377{
+    padding: 0px;
+}
+.pum-theme-2366 .pum-content + .pum-close, .pum-theme-floating-bar .pum-content + .pum-close{
+    position: absolute;
+    height: auto;
+    width: auto;
+    left: auto;
+    right: 0px;
+    bottom: auto;
+    top: 0px;
+    padding: 8px;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 12px;
+    font-style: inherit;
+    line-height: 36px;
+    border: 1px none #ffffff;
+    border-radius: 0px;
+    box-shadow: 1px 1px 3px 0px rgba(2, 2, 2, 0.23);
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.23);
+    background-color: rgba(0, 183, 205, 1.00);
+}
+.pum-theme-2366{
+    #pum_popup_title_2377{
+        display: none;
+    }
+    #gform_fields_12{
+        gap: 10px;
+    }
+    .grid-two-cols{
+        gap: 20px;
+    }
+    .header{
+        padding: 20px;
+        h2{
+            text-align: center;
+            color: var(--Base-Black, #000);
+            font-family: "amplitude", sans-serif;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 44px;
+            letter-spacing: -0.72px;
+            margin-bottom: 0px;
+            
+        }
+        p{
+            margin: 0px;
+            text-align: center;
+            color: var(--Gray-warm-600, #57534E);
+            font-family: "proxima-nova-condensed", sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+    figure{
+        height: 100%;
+        img{
+            height: 100% !important;
+            object-fit: cover;
+            object-position: left;
+        }
+    }
+    form{
+        padding-top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        .form-section{
+            color: var(--Gray-900, #101828);
+            font-family:$thirtiary-font;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 38px;
+            margin: 0;
+            @media screen and (max-width: 768px) {
+                font-size: 24px;
+            }
+        }
+        label{
+            color: var(--Gray-700, #344054);
+
+            /* Text sm/Light */
+            font-family: $primary-font;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 20px; /* 142.857% */
+        }
+        select{
+            border-radius: 8px;
+            border: 1px solid var(--Gray-300, #D0D5DD);
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        input:not([type="checkbox"]){
+            color: var(--Gray-500, #667085);
+            /* Text md/Regular */
+            font-family: $primary-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+
+            //
+            border-radius: 8px;
+            border: 1px solid var(--Gray-300, #D0D5DD);
+            background: var(--Base-White, #FFF);
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+            padding: 22px;
+            width: 100%;
+        
+        }
+        textarea{
+            border-radius: 8px;
+            border: 1px solid var(--Gray-300, #D0D5DD);
+            background: var(--Base-White, #FFF);
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+            //
+            color: var(--Gray-500, #667085);
+            /* Text md/Regular */
+            font-family: $primary-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+        }
+        #input_2_14{
+            display: flex;
+            flex-direction: row;
+        }
+        #gform_submit_button_12{
+                border: none;
+                padding: 12px 20px;
+                border-radius: 30px;
+                background: #fdcb08;
+                width: 100%;
+                font-family: $primary-font;
+                color: #000;
+                
+                &:hover{
+                    background: $secondary;
+                    color: #FFF;
+                    transform: translateY(-3px);
+                    transition:transform 0.5s linear(
+                        0, 0.004, 0.016, 0.035, 0.063, 0.098, 0.141 13.6%, 0.25, 0.391, 0.563, 0.765,
+                        1, 0.891 40.9%, 0.848, 0.813, 0.785, 0.766, 0.754, 0.75, 0.754, 0.766, 0.785,
+                        0.813, 0.848, 0.891 68.2%, 1 72.7%, 0.973, 0.953, 0.941, 0.938, 0.941, 0.953,
+                        0.973, 1, 0.988, 0.984, 0.988, 1
+                    );
+                }
+            
+            
+        }
+    }
+}

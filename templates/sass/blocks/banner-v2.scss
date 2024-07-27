@@ -1,0 +1,46 @@
+//@import '../variables.scss';
+
+.banner-v2{
+    padding: 112px 20px;
+    // 
+    background-size: cover;
+    background-repeat: no-repeat;
+    // min-height: 336px;
+    .container{
+        .row{
+            .grid{
+                display: grid;
+                .breadcrumbs{
+                    display: flex;
+                    gap: 15px;
+                    color: var(--Text-alternate, #FFF);
+                
+                    a{
+                        color: var(--Text-alternate, #FFF);
+                        text-decoration: none;
+
+                        /* Text sm/Semibold */
+                        font-family: $primary-font;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 20px; /* 142.857% */
+                    }
+                }
+                .inner-content{
+                    h1{
+                        color: var(--Text-alternate, #FFF);
+
+                        /* Display lg/Bold */
+                        font-family: $thirtiary-font;
+                        font-size: 48px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 60px; /* 125% */
+                        letter-spacing: -0.96px;
+                    }
+                }
+            }
+        }
+    }
+}

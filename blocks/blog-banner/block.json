@@ -1,0 +1,29 @@
+{
+    "name": "acf/blog-banner",
+    "title": "Blog Banner Block",
+    "description": "A custom Blog Banner block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "banner",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "blog-banner.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

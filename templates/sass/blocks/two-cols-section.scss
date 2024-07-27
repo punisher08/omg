@@ -1,0 +1,216 @@
+//@import '../variables.scss';
+
+.two-cols-section{
+    padding: 96px 0px;
+    position: relative;
+
+    .container{
+
+        .row{
+
+            .flex{
+                display: flex;
+                padding: 0px 32px;
+                justify-content: space-between;
+                @media screen and (max-width: 992px){
+                    display: block;
+                }
+       
+
+                .item{
+                    width: 50%;
+                    @media screen and (max-width: 992px){
+                        display: block;
+                        width: 100%;
+                    }
+                    &:nth-child(2){
+                        display: flex;
+                        /* width: 582px; */
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 44px;
+                        flex-shrink: 0;
+                        width: 45%;
+
+                        @media screen and (max-width: 992px){
+                            display: block;
+                            width: 100%;
+                            padding-top: 100px;
+                        }
+
+                    }
+                    .img-container{
+                        img{
+                            width: 100%;
+
+                        }
+                    }
+                    .truck-icon{
+                      
+                        .img-truck{
+                            
+                            width: 404.409px;
+                            height: 350.405px;
+
+                        }
+                    }
+                    .text-container{
+                        @media screen and (max-width: 992px){
+                            padding-left: 40px;
+                            padding-bottom: 44px;
+                        }
+                        @media(max-width: 768px){
+                            padding-left: 0;
+                        }
+                        .get-moving{
+                            h3{
+                                font-family: $primary-font;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 24px;
+                                color: $primary;
+                                margin: 0;
+                            }
+                        }
+                        div{
+                            h2{
+                                font-family: $thirtiary-font;
+                                font-size: 36px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 44px; /* 122.222% */
+                                letter-spacing: -0.72px;
+                                margin: 0px;
+                            }
+                        }
+
+                    }
+                    .list{
+                        ul{
+                            list-style-type: none;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 44px;
+
+                            @media(max-width: 768px){
+                                padding-left: 0;
+                            }
+                            li{
+                                .list-one{
+                                    gap: 16px;
+                                    display: flex;
+                                    align-items: start;
+                                    // width: 542px;
+
+                                    .list-count{
+                                        display: flex;
+                                        width: 40px;
+                                        height: 56px;
+                                        padding: 0px 9px;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        gap: 10px;
+                                        flex-shrink: 0;
+                                        border-radius: 40px;
+                                        background: rgba(253, 203, 8, 0.30);
+                                        margin: 0;
+
+                                        h1{
+                                            font-family: $thirtiary-font;
+                                            font-size: 32px;
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            color: $primary;
+                                            line-height: 44px;
+                                            letter-spacing: -0.72px;
+                                        }
+                                    }
+                                    ._text{
+                                        display: flex;
+                                        padding-top: 11px;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        gap: 8px;
+                                        align-self: stretch;
+                                        h3{
+                                            font-family: $thirtiary-font;
+                                            font-size: 24px;
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            line-height: 32px; 
+                                            margin: 0;
+                                        }
+                                        p{
+                                            font-family: $primary-font;
+                                            font-size: 15px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: 24px;
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+                            }
+                            .request-quote{
+                                display: flex;
+                                padding: 24px 40px;
+                                justify-content: space-between;
+                                align-items: center;
+                                border-radius: 50px;
+                                background:$secondary;
+
+                                @media(max-width: 768px){
+                                    padding: 10px 20px;
+                                }
+                                .text-get-started{
+                                    h3{
+                                        font-family: $thirtiary-font;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 32px;
+                                        color: #fff;
+                                        margin: 0;
+
+                                        @media(max-width: 768px){
+                                            font-size: 12px;
+                                            line-height: 19px;
+                                        }
+                                    }
+                                }
+                                .btn-container{
+                                    display: flex;
+                                    padding: 12px 20px;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 8px;
+                                    border-radius: 30px;
+                                    background: var(--Primary-500, #FDCB08);
+                                    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+                                    button{
+                                        font-family: $primary-font;
+                                        color: #000;
+                                        background: unset;
+                                        border: unset;
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        line-height: 24px; 
+
+                                        @media(max-width: 768px){
+                                            line-height: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

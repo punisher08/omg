@@ -1,0 +1,126 @@
+//@import '../variables.scss';
+.professional-removalists{
+    padding: 90px 20px;
+    position: relative;
+    overflow: hidden;
+    min-height: 560px;
+    @media screen and (max-width:768px) {
+       padding-left: 20px;
+       padding-right: 20px;
+        
+    }
+    .container{
+        .row{
+            .grid-item-1{
+                display: grid;
+                grid-template-columns: 60% 40%;
+                @media screen and (max-width:768px) {
+                    grid-template-columns: 100%;
+                }
+                .item{
+                    &.car{
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                    .header{
+                        .subheading{
+                            color: var(--Primary-500, #FDCB08);
+                            font-family: $primary-font;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 24px; /* 150% */
+                        }
+                        .heading{
+                            h1{
+                                color: var(--Gray-900, #101828);
+
+                                /* Display md/Bold */
+                                font-family: $thirtiary-font;
+                                font-size: 36px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 44px; /* 122.222% */
+                                letter-spacing: -0.72px;
+                            }
+                        }
+                        .text{
+                            p{
+                                color: var(--Gray-600, #475467);
+
+                                /* Text lg/Regular */
+                                font-family: $primary-font;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 28px; /* 155.556% */
+                            }
+                        }
+                    }
+                }
+            }
+            .grid-item-2{
+              
+                margin-top: 65px;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 20px;
+                align-items: center;
+                @media screen and (max-width:768px) {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    gap: 50px;
+                }
+                .item{
+                    .header{
+                        .subheading{
+                            color: var(--Primary-500, #FDCB08);
+
+                            /* Text md/Semibold */
+                            font-family: $primary-font;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 24px; /* 150% */
+                        }
+                        .heading{
+                            h1{
+                                color: var(--Gray-warm-900, #1C1917);
+                                font-family:$thirtiary-font;
+                                font-size: 36px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 44px; /* 122.222% */
+                                letter-spacing: -0.72px;
+                            }
+                        }
+                        .text{
+                            p{
+                                color: var(--Gray-warm-600, #57534E);
+
+                                /* Text lg/Regular */
+                                font-family: $primary-font;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 28px; /* 155.556% */
+                                margin: 30px 0;
+                            }
+                        }
+                    }
+                }
+                .img-grp{
+                    position: absolute;
+                    right: 0;
+                    @media screen and (max-width:768px) {
+                        position: relative;
+                        right: unset;
+                    }
+                    img{
+                     
+                    }
+                }
+            }
+        }
+    }
+}

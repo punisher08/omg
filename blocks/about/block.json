@@ -1,0 +1,28 @@
+{
+  "name": "acf/about",
+  "title": "About Block",
+  "description": "A custom about block.",
+  "category": "omgwp",
+  "icon": "admin-generic",
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "customClassName": true,
+    "jsx": true
+  },
+  "keywords": [
+    "banner",
+    "content"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "about.php",
+    "postTypes": [
+      "post",
+      "blog",
+      "page",
+      "project",
+       "services"
+    ]
+  }
+}

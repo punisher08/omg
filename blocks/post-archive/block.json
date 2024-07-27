@@ -1,0 +1,29 @@
+{
+    "name": "acf/post-archive",
+    "title": "Post Archive Block",
+    "description": "A custom Post Archive block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "post-archive",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "post-archive.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

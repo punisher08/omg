@@ -1,0 +1,29 @@
+{
+    "name": "acf/promises",
+    "title": "Promises Block",
+    "description": "A custom Promises block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "promises",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "promises.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

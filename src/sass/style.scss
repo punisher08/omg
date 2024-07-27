@@ -1,0 +1,37 @@
+@import './colours';
+
+$global-link-color: $cta;
+
+
+// 3. Your custom mixin overwrites.
+//@mixin hook-card() { color: #000; }
+
+$offcanvas-bar-background: #fff;
+$offcanvas-bar-color-mode: dark;
+
+
+// 4. Import UIkit.
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+$primary: 'Poppins', sans-serif;
+$cursive: museo-sans-rounded, sans-serif;
+
+
+
+// templates
+
+//@import './templates/blog';
+//@import './templates/faqs';
+
+
+// blocks
+@import './blocks.scss';
+@import './header.scss';
+@import './footer.scss';
+
+// page
+@import 'page/request-quote.scss';
+@import './archive.scss';
+@import 'page/inventory-calculator.scss';
+

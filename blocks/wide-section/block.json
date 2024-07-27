@@ -1,0 +1,29 @@
+{
+    "name": "acf/wide-section",
+    "title": "Wide Section Block",
+    "description": "A custom Wide Section block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "wide-section",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "wide-section.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

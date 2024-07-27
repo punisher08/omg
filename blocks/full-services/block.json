@@ -1,0 +1,29 @@
+{
+    "name": "acf/full-services",
+    "title": "Full Services Block",
+    "description": "A custom Full Services block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "full services",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "full-services.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

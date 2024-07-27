@@ -1,0 +1,109 @@
+.steps{
+    padding: 90px 20px;
+    .container{
+        .row{
+            .header{
+                width: 80%;
+                margin: auto;
+                @media screen and (max-width: 768px){
+                    width: 100%;
+                }
+                .subheading{
+                    color: var(--Primary-500, #FDCB08);
+                    text-align: center;
+
+                    /* Text md/Semibold */
+                    font-family: $primary-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 24px; /* 150% */
+                }
+                .heading{
+                    h1{
+                        color: var(--Base-Black, #000);
+                        text-align: center;
+                        
+                        /* Display md/Bold */
+                        font-family: $thirtiary-font;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 44px; /* 122.222% */
+                        letter-spacing: -0.72px;
+                    }
+                }
+                .text{
+                    p{
+                        color: var(--Gray-warm-600, #57534E);
+                        text-align: center;
+                        
+                        /* Text lg/Regular */
+                        font-family:$primary-font;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 28px; /* 155.556% */
+                    }
+                }
+            }
+            .step-lists{
+                margin-top: 64px;
+                .grid{
+                    margin-bottom: 50px;
+                    .item{
+                        width: 80%;
+                        margin: auto;
+                        @media screen and (max-width: 768px){
+                            width: 100%;
+                        }
+                        .card{
+                            display: grid;
+                            grid-template-columns: 30% 70%;
+                            @media screen and (max-width: 768px) {
+                                grid-template-columns: 100%;;
+                                
+                            }
+                            .title{
+                                h1{
+                                    display: flex;
+                                    flex-direction: column;
+                                    // 
+                                    color: var(--Gray-warm-900, #1C1917);
+                                    font-family: $thirtiary-font;
+                                    font-size: 30px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 38px; /* 126.667% */
+                                    margin: 0;
+                                    width: max-content;
+                                    span{
+                                        display: flex;
+
+                                        img{
+                                            width: max-content;
+                                        }
+                                    }
+                                }
+                            }
+                            .content{
+                                p{
+                                    color: var(--Gray-warm-600, #57534E);
+
+                                    /* Text md/Regular */
+                                    font-family: $primary-font;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    line-height: 24px; /* 150% */
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+

@@ -1,0 +1,175 @@
+.archive-banner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 456px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    padding: 0px 20px;
+   
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    .container{
+        z-index: 9;
+        .row{
+            .grid{
+                display: grid;
+                .breadcrumbs{
+                    display: flex;
+                    gap: 15px;
+                    color: var(--Text-alternate, #FFF);
+                
+                    a{
+                        color: var(--Text-alternate, #FFF);
+                        text-decoration: none;
+
+                        /* Text sm/Semibold */
+                        font-family: $primary-font;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 20px; /* 142.857% */
+                    }
+                }
+                .heading{
+                    h1{
+                        color: var(--Text-alternate, #FFF);
+
+                        /* Display lg/Bold */
+                        font-family: $thirtiary-font;
+                        font-size: 48px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 60px; /* 125% */
+                        letter-spacing: -0.96px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.archive-content{
+    padding: 96px 20px;
+    background: #f5f5f4;
+    .container{
+        .row{
+            .grid{
+                &.archive-cards{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 32px;
+                    @media screen and (max-width:768px) {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .item{
+                        isolation: isolate;
+                        position: relative;
+                        border: 1px solid transparent;
+                        border-radius: 20px;
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            background-color: #001c5f;
+                            z-index: -1;
+                            border-radius: 25px;
+                            rotate: 0deg;
+                            transition: 0.5s linear(
+                                0, 0.004, 0.016, 0.035, 0.063, 0.098, 0.141 13.6%, 0.25, 0.391, 0.563, 0.765,
+                                1, 0.891 40.9%, 0.848, 0.813, 0.785, 0.766, 0.754, 0.75, 0.754, 0.766, 0.785,
+                                0.813, 0.848, 0.891 68.2%, 1 72.7%, 0.973, 0.953, 0.941, 0.938, 0.941, 0.953,
+                                0.973, 1, 0.988, 0.984, 0.988, 1
+                            );
+                        }
+
+                        &:hover {
+                            border: 1px solid #001c5f;
+                            &:before {
+                                rotate: -8deg;
+                            }
+                        }
+
+                        .card{
+                            border-radius: 20px 20px 20px 20px;
+                            background: var(--Base-White, #FFF);
+                            min-height: 500px;
+                            position: relative;
+                            height: 100%;
+                            .card-header{
+                                img{
+                                    max-width: 100%;
+                                    border-radius: 20px 20px 0px 0px;
+                                    width: 419px;
+                                    height: 240px;
+                                    object-fit: cover;
+                                    width: 100%;
+                                }
+                            }
+                            .card-body{
+                                // border-radius: 0px 0px 20px 20px;
+                                // background: var(--Base-White, #FFF);
+                                padding: 25px;
+                                .title{
+                                    color: var(--Base-Black, #000);
+
+                                    /* Display sm/Bold */
+                                    font-family: $thirtiary-font;
+                                    font-size: 30px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 38px; /* 126.667% */
+                                    margin-bottom: 10px;
+                                }
+                                .text{
+                                    color: var(--Gray-warm-600, #57534E);
+
+                                    /* Text md/Regular */
+                                    font-family: $primary-font;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 24px; /* 150% */
+                                }
+                                .more-btn{
+                                    position: absolute;
+                                    bottom: 30px;                                
+                                    a{
+                                        color: $primary;
+                                        font-family: $primary-font;
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        line-height: 24px; /* 150% */
+                                        text-decoration: none;
+                                        //
+                                        display: flex;
+                                        gap: 10px;
+                                        span{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                        }
+                                    
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

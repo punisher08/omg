@@ -1,0 +1,164 @@
+//@import '../variables.scss';
+.promises{
+    background: var(--Gray-warm-100, #F5F5F4);
+    padding: 90px 0px;
+    @media screen and (max-width:768px) {
+        padding: 50px 0px;
+        
+    }
+    .container{
+        .header{
+            .subheading{
+                color: var(--Primary-500, #FDCB08);
+                text-align: center;
+                
+                /* Text md/Semibold */
+                font-family: $primary-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px; /* 150% */
+                @media screen and (max-width:768px) {
+                    text-align: left;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    
+                }
+            }
+            .heading{
+                h1{
+                    color: var(--Gray-warm-900, #1C1917);
+                    text-align: center;
+
+                    /* Display md/Bold */
+                    font-family:$thirtiary-font;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 44px; /* 122.222% */
+                    letter-spacing: -0.72px;
+                    margin-bottom: 60px;
+                    @media screen and (max-width:768px) {
+                        text-align: left;
+                        font-size: 27px;
+                        
+                    }
+                }
+            }
+        }
+        .row{
+            &.desktop{
+                @media screen and (max-width: 768px){
+                    display: none;
+                }
+            }
+            .grid{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 40px;
+            
+                @media screen and (max-width: 768px){
+                    grid-template-columns: 1fr;
+                }
+                .item{
+               
+                    .card{
+                        padding: 30px;
+                        display: grid;
+                        justify-items: center;
+                        align-items: center;
+                        border-radius: 20px;
+                        background: var(--Base-White, #FFF);
+                        max-width: 333px;
+                        // min-width: 333px;
+                        @media screen and (max-width:768px) {
+                            min-width: unset;
+                            max-width: 80%;
+                            width: 100%;
+                            margin: auto;
+                        }
+                        .title{
+                            h1{
+                                color: var(--Gray-warm-900, #1C1917);
+                                text-align: center;
+
+                                /* Display sm/Bold */
+                                font-family: $thirtiary-font;
+                                font-size: 27px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 38px; /* 126.667% */
+                                text-align: center;
+                                margin: 12px 0px;
+                            }
+                        }
+                        .text{
+                            p{
+                                color: var(--Gray-warm-600, #57534E);
+                                text-align: center;
+
+                                /* Text md/Regular */
+                                font-family: $primary-font;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: normal;
+                                line-height: 24px; /* 150% */
+                            }
+                        }
+                    }
+                }
+            }
+            .last-child{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px; 
+                margin-top: 40px; 
+                @media screen and (max-width:768px) {
+                    grid-template-columns: 1fr;
+                }
+                .item{
+                    &:nth-child(1){
+                        display: flex;
+                        justify-content: flex-end;
+                        @media screen and (max-width:768px) {
+                             justify-content: center;
+                        }
+                    }
+                    &:nth-child(2){
+                        display: flex;
+                        justify-content: flex-start;
+                        @media screen and (max-width:768px) {
+                             justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.promises{
+    .mobile{
+        display: none;
+        @media screen and (max-width: 768px){
+            display: block;
+            
+        }
+        .splide{
+            li{
+                border-radius: 20px;
+                background: var(--Base-White, #FFF);
+                // max-width: 333px;    
+                margin: 10px;   
+                width: 300px;    
+                padding: 20px; 
+            }
+            .card{
+                display: grid;
+                justify-items: center;
+                align-items: center;
+                }
+        }
+    }
+}
+

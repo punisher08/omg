@@ -1,0 +1,81 @@
+.cards{
+    padding: 90px 20px;
+    background-color: #FFF;
+    @media screen and (max-width: 768px){
+        padding: 0px 20px;
+    }
+    .container{
+        .row{
+            .header{
+                width: 50%;
+                margin: auto;
+                @media screen and (max-width: 768px){
+                    width: 100%;
+                }
+                .heading{
+                    h1{
+                        color: var(--Base-Black, #000);
+                        text-align: center;
+                        
+                        /* Display md/Bold */
+                        font-family: $thirtiary-font;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 44px; /* 122.222% */
+                        letter-spacing: -0.72px;
+                    }
+                }
+            }
+            .grid{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 40px;
+                margin-top: 65px;
+                @media screen and (max-width: 768px) {
+                    grid-template-columns: repeat(1,1fr);
+                    
+                }
+                .item{
+                    .card{
+                        border-radius: 20px;
+                        background: var(--Gray-warm-100, #F5F5F4);
+                        padding: 40px;
+                        // 
+                        display: grid;
+                        justify-items: center;
+                        .icon{
+
+                        }
+                        .title{
+                            h1{
+                                color: var(--Gray-warm-900, #1C1917);
+                                text-align: center;
+
+                                /* Display sm/Bold */
+                                font-family: $thirtiary-font;
+                                font-size: 30px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 38px; /* 126.667% */
+                            }
+                        }
+                        .text{
+                            p{
+                                color: var(--Gray-warm-600, #57534E);
+                                text-align: center;
+
+                                /* Text md/Regular */
+                                font-family: $primary-font;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: 24px; /* 150% */
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

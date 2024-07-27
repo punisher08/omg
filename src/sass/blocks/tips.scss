@@ -1,0 +1,226 @@
+// //@import '../variables.scss';
+.tips{
+    padding: 90px 0px;
+    position: relative;
+    @media screen and (max-width:768px) {
+        padding-bottom: 0px;
+        padding-top: 50px;
+        
+    }
+    .container{
+        .row{
+            @media screen and (max-width:768px) {
+              padding-left:20px ;
+              padding-right:20px ;
+            }
+            .header{
+                width: 50%;
+                margin: auto;
+                @media screen and (max-width:768px) {
+                    max-width: 100%;
+                    width: 100%;
+                }
+                .subheading{
+                    color: var(--Primary-500, #FDCB08);
+                    text-align: center;
+                    
+                    /* Text md/Semibold */
+                    font-family: $primary-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 24px; /* 150% */
+                    @media screen and (max-width:768px) {
+                        text-align: left;
+                        
+                    }
+                }
+                .heading{
+                    h1{
+                        color: var(--Base-Black, #000);
+                        text-align: center;
+
+                        /* Display md/Bold */
+                        font-family: $thirtiary-font;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 44px; /* 122.222% */
+                        letter-spacing: -0.72px;
+                        @media screen and (max-width:768px) {
+                            font-size: 27px;
+                            text-align: left;
+                            line-height: normal;
+                            
+                        }
+                    }
+                }
+            }
+            .grid{
+                display: grid;
+                row-gap: 16px;
+                margin-top: 65px;
+                // icons
+                @media screen and (max-width:768px) {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    
+                }
+                .icon-top{
+                    position: absolute;
+                    top: 200px;
+                    left: 0;
+                    z-index: -1;
+                    @media screen and (max-width:768px) {
+                        display: none;
+                        
+                    }
+                }
+                .icon-mid{
+                    position: absolute;
+                    top: 600px;
+                    left: 0;
+                    z-index: -1;
+                    @media screen and (max-width:768px) {
+                        display: none;
+                        
+                    }
+                }
+                .icon-bottom{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    z-index: -1;
+                    @media screen and (max-width:768px) {
+                       display: none;
+                        
+                    }
+                }
+                .item{
+                    @media screen and (max-width:768px) {
+                        // padding: 20px 0px;
+                        padding-bottom: 20px;
+                        
+                    }
+                    &.active{
+                       .card{
+                        .title{
+                            .toggle{
+                                img{
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        }
+                        .content{
+                            display: block;
+                        }
+                        
+                       }
+                    }
+                    .card{
+                        display: grid;
+                        grid-template-columns: 5% 27% auto;
+                        align-items: start;
+                        justify-items: start;
+                        gap: 40px;
+                        border-radius: 20px;
+                        background: var(--Gray-warm-50, #FAFAF9);
+                        padding: 25px;
+                        width: 75%;
+                        margin: auto;
+
+                        @media screen and (max-width:768px) {
+                            grid-template-columns: 1fr;
+                            background: none;
+                            padding: 0px;
+                            width: 80%;
+                            gap: 20px;
+                            @media screen and (max-width:768px) {
+                                width: 90%;
+                                
+                            }
+                        }
+                        .icon{
+                            @media screen and (max-width:768px) {
+                                display: none;
+                                
+                            }
+                            img{
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+                        .title{
+                            color: var(--Base-Black, #000);
+
+                            /* Display xs/Bold */
+                            font-family: $thirtiary-font;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 32px; /* 133.333% */
+                            span{
+                                color: var(--Base-Black, #000);
+
+                                /* Display xs/Bold */
+                                font-family: $thirtiary-font;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 32px; /* 133.333% */
+                                @media screen and (max-width:768px) {
+                                font-size: 22px;
+                                line-height: normal;    
+                                }
+                            }
+                            .toggle{
+                                display: none;
+                                @media screen and (max-width:768px) {
+                                    display: block;
+                                   
+                                    
+                                }
+                            }
+                            @media screen and (max-width:768px) {
+                                display: flex;
+                                justify-content: space-between;
+                                width: 100%;
+                                
+                            }
+                        }
+                        .content{
+                            @media screen and (max-width:768px) {
+                               display: none;
+                            }
+                            p{
+                                color: var(--Gray-warm-600, #57534E);
+
+                                /* Text md/Regular */
+                                font-family: $primary-font;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px; /* 150% */
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .mobile-icon{
+            display: none;
+            @media screen and (max-width:768px) {
+                position: relative;
+                display: flex;
+                justify-content: flex-end;
+                
+            }
+            img{
+                width: 100%;
+                margin-bottom: -120px;
+                z-index: -1;
+            }
+        }
+    }
+}

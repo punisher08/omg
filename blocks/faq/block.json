@@ -1,0 +1,29 @@
+{
+    "name": "acf/faq",
+    "title": "Faq Block",
+    "description": "A custom Faq block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "faq",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "faq.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

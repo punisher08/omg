@@ -1,0 +1,29 @@
+{
+    "name": "acf/testimonials",
+    "title": " Testimonials Block",
+    "description": "A custom Testimonials block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "testimonials",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "testimonials.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

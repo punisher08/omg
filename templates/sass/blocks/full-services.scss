@@ -1,0 +1,98 @@
+.full-services{
+    padding: 90px 20px;
+    background-color: $secondary;
+    .container{
+        .row{
+            .content-group{
+                margin-bottom: 65px;
+                .header{
+                    .subheading{
+                        color: var(--Primary-500, #FDCB08);
+
+                        /* Text md/Semibold */
+                        font-family: $primary-font  ;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 24px; /* 150% */
+                    }
+                    .heading{
+                        h1{
+                            color: var(--Text-alternate, #FFF);
+
+                            /* Display md/Bold */
+                            font-family: $thirtiary-font;
+                            font-size: 36px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 44px; /* 122.222% */
+                            letter-spacing: -0.72px;
+                        }
+                    }
+                }
+                .text{
+                    p{
+                        color: var(--Gray-warm-200, #E7E5E4);
+
+                        /* Text lg/Regular */
+                        font-family: $primary-font;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 28px; /* 155.556% */
+                    }
+                }
+            }
+            .grid{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 40px;
+                @media screen and (max-width: 768px){
+                    grid-template-columns: 1fr;
+                }
+                .item{
+                    .card{
+                        border-radius: 20px;
+                        background: var(--Base-White, #FFF);
+                        padding: 40px;
+                        display: grid;
+                        justify-items: center;
+                        .icon{
+                            img{
+
+                            }
+                        }
+                        .title{
+                            h1{
+                                color: var(--Gray-warm-900, #1C1917);
+                                text-align: center;
+
+                                /* Display sm/Bold */
+                                font-family: $thirtiary-font;
+                                font-size: 27px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 38px; /* 126.667% */
+                            }
+                        }
+                        .text{
+                            p{
+                                color: var(--Gray-warm-600, #57534E);
+                                text-align: center;
+                                
+                                /* Text md/Regular */
+                                font-family: $primary-font;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: 24px; /* 150% */
+                                margin: 0;
+                            }
+                        }
+                    
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "name": "acf/cards",
+    "title": "Cards Block",
+    "description": "A custom Cards block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "cards",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "cards.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

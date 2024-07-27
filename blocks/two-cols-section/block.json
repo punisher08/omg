@@ -1,0 +1,29 @@
+{
+    "name": "acf/two-cols-section",
+    "title": "Two Column Section Block",
+    "description": "A custom two-cols-section block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "two cols section",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "two-cols-section.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

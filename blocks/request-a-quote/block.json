@@ -1,0 +1,29 @@
+{
+    "name": "acf/request-a-quote",
+    "title": "Request a quote Block",
+    "description": "A custom Request a quote block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "request a quote",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "request-a-quote.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

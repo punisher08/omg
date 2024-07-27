@@ -1,0 +1,114 @@
+// //@import '../variables.scss';
+.tips{
+    padding: 90px 20px;
+    position: relative;
+    .container{
+        .row{
+            .header{
+                width: 50%;
+                margin: auto;
+                @media screen and (max-width:768px) {
+                    max-width: 100%;
+                    width: 100%;
+                }
+                .subheading{
+                    color: var(--Primary-500, #FDCB08);
+                    text-align: center;
+                    
+                    /* Text md/Semibold */
+                    font-family: $primary-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 24px; /* 150% */
+                }
+                .heading{
+                    h1{
+                        color: var(--Base-Black, #000);
+                        text-align: center;
+
+                        /* Display md/Bold */
+                        font-family: $thirtiary-font;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 44px; /* 122.222% */
+                        letter-spacing: -0.72px;
+                    }
+                }
+            }
+            .grid{
+                display: grid;
+                row-gap: 16px;
+                margin-top: 65px;
+                // icons
+                .icon-top{
+                    position: absolute;
+                    top: 200px;
+                    left: 0;
+                    z-index: -1;
+                }
+                .icon-mid{
+                    position: absolute;
+                    top: 600px;
+                    left: 0;
+                    z-index: -1;
+                }
+                .icon-bottom{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    z-index: -1;
+                }
+                .item{
+                   
+                    .card{
+                        display: grid;
+                        grid-template-columns: 5% 27% auto;
+                        align-items: start;
+                        justify-items: start;
+                        gap: 40px;
+                        border-radius: 20px;
+                        background: var(--Gray-warm-50, #FAFAF9);
+                        padding: 25px;
+                        width: 75%;
+                        margin: auto;
+
+                        @media screen and (max-width:768px) {
+                            grid-template-columns: 1fr;
+                        }
+                        .icon{
+                            img{
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+                        .title{
+                            color: var(--Base-Black, #000);
+
+                            /* Display xs/Bold */
+                            font-family: $thirtiary-font;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 32px; /* 133.333% */
+                        }
+                        .content{
+                            p{
+                                color: var(--Gray-warm-600, #57534E);
+
+                                /* Text md/Regular */
+                                font-family: $primary-font;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px; /* 150% */
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

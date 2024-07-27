@@ -1,0 +1,29 @@
+{
+    "name": "acf/quick-action-section",
+    "title": "Quick action section Block",
+    "description": "A custom Quick action section block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "quick-action-section",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "quick-action-section.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

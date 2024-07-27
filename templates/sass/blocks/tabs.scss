@@ -1,0 +1,117 @@
+.tabs{
+    padding: 90px 20px;
+    .container{
+        .row{
+            .tabs-header{
+                margin-bottom: 65px;
+                .flex{
+                    display: flex;
+                    gap: 30px;
+                    justify-content: flex-start;
+                    padding: 20px 0;
+                    border-bottom: 1px solid var(--Gray-warm-200, #E7E5E4);
+                    flex-wrap: wrap;
+                    @media screen and (max-width: 768px) {
+                        justify-content: center;
+                        
+                    }
+                    .item{
+                        color: var(--Gray-warm-500, #79716B);
+
+                        /* Text md/Semibold */
+                        font-family:$primary-font;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 24px; /* 150% */
+                        cursor: pointer;
+                        &.active{
+                            color: var(--Primary-500, #FDCB08);
+                        }
+                    }
+                }
+            }
+            .tabs-content{
+                .tab{
+                    display: none;
+                    &.active{
+                        display: block;
+                    }
+                }
+                .grid{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 40px;
+                    align-items: center;
+                    @media screen and (max-width: 768px) {
+                        grid-template-columns: 100%;
+                    }
+                    .item{
+                        .header{
+                            .subheading{
+                                color: var(--Primary-500, #FDCB08);
+                                /* Text md/Semibold */
+                                font-family: $primary-font;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 24px; /* 150% */
+                            }
+                            .heading{
+                                h1{
+                                    color: var(--Base-Black, #000);
+
+                                    /* Display md/Bold */
+                                    font-family: $thirtiary-font;
+                                    font-size: 36px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 44px; /* 122.222% */
+                                    letter-spacing: -0.72px;
+                                }
+                            }
+                        }
+                        .content{
+                            p{
+                                color: var(--Gray-warm-600, #57534E);
+
+                                /* Text lg/Regular */
+                                font-family: $primary-font;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 28px; /* 155.556% */
+                            }
+                        }
+                    }   
+                    .img-grp{
+                        position: relative;
+                        .wysywig_content{
+                            img{
+                                max-width: 100%;
+                                border-radius: 40px;
+                                width: 604px;
+                                height: 402px;
+                                object-fit: cover;
+                            }
+                        }
+                        .icon-bottom{
+                            position: absolute;
+                            right: -100px;
+                            bottom: -290px;
+                        }
+                    }
+                    .wysywig_content{
+                        img{
+                            max-width: 100%;
+                            border-radius: 40px;
+                            width: 604px;
+                            height: 402px;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

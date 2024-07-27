@@ -1,0 +1,275 @@
+// @import './variables.scss';
+header{
+    //    overflow: hidden;
+       padding: 10px 20px;
+        .container{
+         
+            .row{
+                .flex{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: relative;
+                    .mobile-menu{
+                        display: none;
+                        @media screen and (max-width: 768px){
+                            display: block;
+                            cursor: pointer;
+                        }
+                    }
+                    .brand{
+                        .logo{
+                            img{
+                                // width: 170.758px;
+                                width: 100%;
+                                height: 70px;
+                                @media screen and (max-width: 768px){
+                                    width: 100%;
+                                    height: 55px;
+                                }
+                            }
+                        }
+                    }
+                    .menu{
+                        @media screen and (max-width: 768px){
+                            display: block;
+                        }
+                        nav{
+                            &.active{
+                                @media screen and (max-width: 768px){
+                                    position: fixed;
+                                    height: 100%;
+                                    z-index: 9;
+                                    background: $secondary;
+                                    width: 100%;
+                                    left: 0;
+                                    display: block;
+                                    right: 0;
+                                    top: 0;
+                                    z-index: 999;
+                                }
+                                .mobile-actions{
+                                    @media screen and (max-width: 768px){
+                                        display: block;
+                                    }
+                                    ul{
+                                        padding: 20px 40px;
+                                        li{
+                                            width: 100%;
+                                            .icon{
+                                                border: none;
+                                                padding: 20px;
+                                                border-radius: 30px;
+                                                background: #FDCB08;
+                                                margin-bottom: 20px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                gap: 15px;
+                                            }
+                                            button{
+                                                border: none;
+                                                padding: 20px;
+                                                border-radius: 30px;
+                                                background: $primary;
+                                                width: 100%;
+                                                span{
+                                                    color: var(--Base-Black, #000);
+                                                    font-family: $primary-font;
+                                                    font-size: 16px;
+                                                    font-style: normal;
+                                                    font-weight: 600;
+                                                    line-height: 24px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .mobile-navigation{
+                                    display: none;
+                                    @media screen and (max-width: 768px){
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        align-items: center;
+                                        padding: 10px 20px;
+                                    }
+                                    img{
+                                        width: 70%;
+                                        height: 100%;
+                                    }
+                                    .mobile-logo{
+                                        img{
+                                            display: block;
+                                        }
+                                    }
+                                    .close-icon{
+                                        @media screen and (max-width: 768px){
+                                            display: block;
+                                            cursor: pointer;
+                                            
+                                        }
+                                    }
+                                }
+                                ul{
+                                    @media screen and (max-width: 768px){
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        padding: 20px 40px;
+                                     }
+                                    li{
+                                        a{
+                                            @media screen and (max-width: 768px){
+                                                color:#FFF;
+                                                font-size: 1.2rem;
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            // eo active
+                        }
+                        .mobile-actions{
+                            display: none;
+                        }
+                        .mobile-logo{
+                            img{
+                                display: none;
+                            }
+                        }
+                        .close-icon{
+                            display: none;
+                        }
+                        ul{
+                            display: flex;
+                            align-items: center;
+                            gap: 32px;
+                            // position: relative;
+                            @media screen and (max-width: 768px){
+                                display: none;
+                             }
+                            
+                            li{
+                                // position: relative;
+                                &.menu-item-has-children{
+                                    &:after{
+                                        content: url('/wp-content/uploads/2024/07/chevron-down.svg');
+                                        position: absolute;
+                                        top: 30px;
+                                    }
+                                }
+                                .sub-menu{
+                                    display: grid;
+                                    position: absolute;
+                                    padding: 20px 20px;
+                                    background: #FFF;
+                                    width: 70%;
+                                    top: 50px;
+                                    left: 50%;
+                                    right: 0;
+                                    transform: translate(-50%, 50%);
+                                    border-radius: 15px;
+                                    grid-template-columns: repeat(2, 1fr);
+                                    // &:before{
+                                    //     content: "";
+                                    //     // add arrow
+                                    //     content: url(https://no-limits-removalists.lndo.site/wp-content/uploads/2024/07/chevron-down.svg);
+                                    //     position: absolute;
+                                    //     right: 0;
+                                    //     top: 0px;
+                                        
+                                    // }
+                                    // a{
+                                    //     &:hover{
+                                    //         color: #FFF !important;
+                                    //     }
+                                    // }
+                                }
+                                &:hover{
+                                    .sub-menu{
+                                        display: grid;
+                                    }
+                                }
+                                a{
+                                    text-decoration: none;
+                                    color: var(--Gray-warm-600, #57534E);
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: 24px; 
+                                    font-family: $primary-font;
+                                    z-index: 9;
+                                    &:hover{
+                                        color: $primary;
+                                    
+                                    }
+                                }
+                                    list-style: none;
+                                    color: var(--Gray-warm-600, #57534E);
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: 24px; 
+                            }
+                        }
+                    }
+                    .actions{
+                        @media screen and (max-width: 768px){
+                            display: none;
+                            
+                        }
+                        ul{
+                            padding: unset;
+                            list-style-type: none;
+                        
+    
+                            li{
+                               
+                                color: var(--Gray-warm-600, #57534E);
+                                /* Text md/Semibold */
+                                font-family: $primary-font;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 24px; /* 150% */
+                                .phone-quote{
+                                    text-decoration: none;
+                                   display: flex;
+                                   align-items: center;
+                                   gap: 32px;
+    
+                                   .icon{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 8px;
+                                   }
+    
+                                   div{
+    
+                                    button{
+                                        border: none;
+                                        padding: 12px 20px;
+                                        border-radius: 30px;
+                                        background: $primary;
+                                        span{
+                                            color: var(--Base-Black, #000);
+                                            /* Text md/Semibold */
+                                            font-family: $primary-font;
+                                            font-size: 16px;
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            line-height: 24px; /* 150% */
+                                        }
+                                    }
+                                   }
+    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

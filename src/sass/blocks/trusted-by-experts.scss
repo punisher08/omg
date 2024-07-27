@@ -1,0 +1,221 @@
+.trusted-by-experts{
+    padding: 90px 0px;
+    position: relative;
+    overflow: hidden;
+   
+    .container{
+        .row{
+            .grid-item-1{
+                display: grid;
+                grid-template-columns: 60% 40%;
+                @media screen and (max-width:768px) {
+                    grid-template-columns: 100%;
+                }
+                .item{
+                    &.car{
+                        display: flex;
+                        justify-content: flex-end;
+                        position: relative;
+                        img{
+                            position: absolute;
+                            bottom: 0;
+                            top: 0;
+                            z-index: 9999;
+                            right: 0;
+                            left: 0;
+                        }
+                        @media screen and (max-width:768px) {
+                            display: none;
+                            
+                        }
+                    }
+                    .header{
+                        @media screen and (max-width:768px) {
+                            padding-left: 20px;
+                            padding-right: 20px;
+                        }
+                        .subheading{
+                            color: var(--Primary-500, #FDCB08);
+                            font-family: $primary-font;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 24px; /* 150% */
+                          
+                        }
+                        .heading{
+                          
+                            h1{
+                                color: var(--Gray-900, #101828);
+
+                                /* Display md/Bold */
+                                font-family: $thirtiary-font;
+                                font-size: 36px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 44px; /* 122.222% */
+                                letter-spacing: -0.72px;
+                                @media screen and (max-width:768px) {
+                                    font-size: 30px;
+                                    
+                                }
+                            }
+                        }
+                        .text{
+                            p{
+                                color: var(--Gray-600, #475467);
+
+                                /* Text lg/Regular */
+                                font-family: $primary-font;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 28px; /* 155.556% */
+                            }
+                        }
+                    }
+                }
+            }
+            .grid-item-2{
+              
+                margin-top: 65px;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 20px;
+                @media screen and (max-width:1024px) and (min-width: 769px) {
+                    align-items: center;;
+                }
+                @media screen and (max-width:768px) {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    gap: 50px;
+                }
+              
+                .item{
+                    .grid-template-columns-2{
+                        display: grid;
+                        grid-template-columns: repeat(2,1fr);
+                        gap: 20px;
+                        @media screen and (max-width:768px) {
+                           grid-template-columns: 100%;
+                        }
+                        &.desktop-experts{
+                   
+                            @media screen and (max-width:768px) {
+                                display: none;
+                            }
+                        }
+                        .card{
+                            @media screen and (max-width:768px) {
+                                width: 75%;
+                                margin: auto; 
+                            }
+                            .header{
+
+                            }
+                            .body{
+                                .heading{
+                                    h1{
+                                        color: var(--Gray-900, #101828);
+
+                                        /* Display sm/Bold */
+                                        font-family: $thirtiary-font;
+                                        font-size: 30px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 38px; /* 126.667% */
+                                    }
+                                }
+                                .text{
+                                    p{
+                                        color: var(--Gray-600, #475467);
+                                        /* Text md/Regular */
+                                        font-family:$primary-font;
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 24px; /* 150% */
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .img-grp{
+                    position: absolute;
+                    right: 0;
+                    z-index: 9;
+                    max-width: 650px;
+                    @media screen and (max-width:1024px) and (min-width: 769px) {
+                        max-width: 450px;
+                        
+                    }
+                    @media screen and (max-width:768px) {
+                        display: none;
+                        position: relative;
+                        right: unset;
+                    }
+                    img{
+                        border-top-left-radius: 25px;
+                        border-bottom-left-radius: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .experts-slider-mobile{
+        display: none;
+        @media screen and (max-width:768px) {
+            display: block;
+            
+        }
+        .splide__track{
+            .splide__list{
+                .splide__slide{
+                        padding: 20px;
+                        border-radius: 20px;
+                        background: var(--Gray-warm-100, #F5F5F4);
+                        margin: 5px;
+                        width: 320px;
+                        .card{
+                            .header{
+                                .icon{
+                                    img{
+                                        max-width: 100%;
+                                    }
+                                }
+                            }
+                            .body{
+                                .heading{
+                                    h1{
+                                        /* Display md/Bold */
+                                        font-family: $thirtiary-font;
+                                        color: var(--Gray-warm-900, #1C1917);
+                                        font-size: 24px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 32px; /* 133.333% */
+                                    }
+                                }
+                                .text{
+                                    p{
+                                        color: var(--Gray-warm-600, #57534E);
+
+                                        /* Text md/Regular */
+                                        font-family: $primary-font;
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 24px; /* 150% */
+                                    }
+                                }
+                            }
+                        }
+                }
+            }
+        }
+        .splide__pagination{
+            bottom: -1.5em;
+        }
+    }
+}

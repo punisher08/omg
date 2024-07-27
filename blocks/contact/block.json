@@ -1,0 +1,29 @@
+{
+    "name": "acf/contact",
+    "title": "Contact Block",
+    "description": "A custom Contact block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "contact",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "contact.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

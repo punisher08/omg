@@ -1,0 +1,29 @@
+{
+    "name": "acf/tabs",
+    "title": " Tabs Block",
+    "description": "A custom Tabs block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "tabs",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "tabs.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

@@ -1,0 +1,29 @@
+{
+    "name": "acf/tips",
+    "title": "Tips Block",
+    "description": "A custom Tips block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "tips",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "tips.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

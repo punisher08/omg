@@ -1,0 +1,29 @@
+{
+    "name": "acf/steps",
+    "title": " Steps Block",
+    "description": "A custom Steps block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "steps",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "steps.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

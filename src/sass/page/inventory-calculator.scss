@@ -1,0 +1,49 @@
+.inventroy-calculator{
+    .form{
+        .grid{
+            display: grid;
+            grid-template-columns: 30% 70%;
+            gap: 25px;
+            .item{
+                &.options{
+                    .option-group{
+                        border-radius: 5px;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 8px;
+                        // fonts
+                        font-family:$primary-font;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 20px; 
+                        margin-bottom: 10px;
+                        cursor: pointer;
+                        // Color
+                        border-radius: 5px;
+                        background: var(--Gray-warm-100, #F5F5F4);
+                        &.active{
+                            background: var(--Primary-500, #FDCB08);
+                            color: var(--Base-White, #FFF);
+                        }
+                    }
+                }
+            }
+            .count-group{
+                display: flex;
+                justify-content: space-between;
+                padding: 0px 15px;
+                align-items: center;
+                margin-bottom: 10px;
+                .count{
+                    display: flex;
+                    gap: 10px;
+                    padding: 0px 15px;
+                    align-items: center;
+                    background: #ffa50047;
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+}

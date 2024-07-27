@@ -1,0 +1,29 @@
+{
+    "name": "acf/locations",
+    "title": "Locations Block",
+    "description": "A custom Locations block.",
+    "category": "omgwp",
+    "icon": "admin-generic",
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    },
+    "keywords": [
+      "locations",
+      "content"
+    ],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "locations.php",
+      "postTypes": [
+        "post",
+        "blog",
+        "page",
+        "project",
+         "services"
+      ]
+    }
+  }
+  

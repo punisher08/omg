@@ -1,0 +1,90 @@
+//@import '../variables.scss';
+.quick-action-section{
+    padding: 48px 20px;
+    background: $primary;
+    
+    .container{
+        .row{
+            .flex{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+                    gap: 20px;
+                }
+                .item{
+                    .content{
+                        .heading{
+                            h1{
+                                color: var(--Gray-warm-900, #1C1917);
+
+                                /* Display md/Bold */
+                                font-family: $thirtiary-font;
+                                font-size: 36px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 44px; /* 122.222% */
+                                letter-spacing: -0.72px;
+                                margin: 0;
+                                // padding-bottom: 20px;
+                                @media screen and (max-width:768px) {
+                                    font-size: 30px;
+                                    text-align: center;
+                                    
+                                }
+                            }
+                        }
+                        .text{
+                            p{
+                                color: var(--Gray-warm-600, #57534E);
+                                text-align: center;
+                                
+                                /* Text lg/Regular */
+                                font-family: $primary-font;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 28px; /* 155.556% */
+                                @media screen and (max-width:768px) {
+                                    text-align: center;
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+                .item.cta{
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                        
+                    }
+                    a{
+                        text-decoration: none;
+                    }
+                    button{
+                        display: flex;
+                        color: var(--Base-White, #FFF);
+                        font-family: $primary-font;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 28px;
+                        padding: 12px 20px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 8px;
+                        border-radius: 30px;
+                        background: var(--secondary-700, #001C5F);
+                        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+                        border: none;
+                        @media screen and (max-width: 768px) {
+                            width: 100%;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

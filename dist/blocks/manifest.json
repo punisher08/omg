@@ -1,0 +1,28 @@
+{
+  "main.css": "blocks/main-caf0b17a.css",
+  "main.css.map": "blocks/main-caf0b17a.css.map",
+  "main.js": "blocks/main-16a20723.js",
+  "main.js.map": "blocks/main-16a20723.js.map",
+  "runtime.js": "blocks/runtime-a6b52e4c.js",
+  "runtime.js.map": "blocks/runtime-a6b52e4c.js.map",
+  "wpackioEp": {
+    "main": {
+      "assets": {
+        "js": [
+          "blocks/runtime-a6b52e4c.js",
+          "blocks/main-16a20723.js"
+        ],
+        "js.map": [
+          "blocks/runtime-a6b52e4c.js.map",
+          "blocks/main-16a20723.js.map"
+        ],
+        "css": [
+          "blocks/main-caf0b17a.css"
+        ],
+        "css.map": [
+          "blocks/main-caf0b17a.css.map"
+        ]
+      }
+    }
+  }
+}

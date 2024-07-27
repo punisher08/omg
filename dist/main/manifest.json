@@ -1,0 +1,28 @@
+{
+  "main.css": "main/main-ae4099b5.css",
+  "main.css.map": "main/main-ae4099b5.css.map",
+  "main.js": "main/main-0eba50f7.js",
+  "main.js.map": "main/main-0eba50f7.js.map",
+  "runtime.js": "main/runtime-23984fcd.js",
+  "runtime.js.map": "main/runtime-23984fcd.js.map",
+  "wpackioEp": {
+    "main": {
+      "assets": {
+        "js": [
+          "main/runtime-23984fcd.js",
+          "main/main-0eba50f7.js"
+        ],
+        "js.map": [
+          "main/runtime-23984fcd.js.map",
+          "main/main-0eba50f7.js.map"
+        ],
+        "css": [
+          "main/main-ae4099b5.css"
+        ],
+        "css.map": [
+          "main/main-ae4099b5.css.map"
+        ]
+      }
+    }
+  }
+}

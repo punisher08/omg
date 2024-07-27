@@ -1,0 +1,32 @@
+{
+  "main.css": "testimonial-block/main.css",
+  "main.css.map": "testimonial-block/main.css.map",
+  "main.js": "testimonial-block/main.js",
+  "main.js.map": "testimonial-block/main.js.map",
+  "runtime.js": "testimonial-block/runtime.js",
+  "runtime.js.map": "testimonial-block/runtime.js.map",
+  "vendors~main.js": "testimonial-block/vendors~main.js",
+  "vendors~main.js.map": "testimonial-block/vendors~main.js.map",
+  "wpackioEp": {
+    "main": {
+      "assets": {
+        "js": [
+          "testimonial-block/runtime.js",
+          "testimonial-block/vendors~main.js",
+          "testimonial-block/main.js"
+        ],
+        "js.map": [
+          "testimonial-block/runtime.js.map",
+          "testimonial-block/vendors~main.js.map",
+          "testimonial-block/main.js.map"
+        ],
+        "css": [
+          "testimonial-block/main.css"
+        ],
+        "css.map": [
+          "testimonial-block/main.css.map"
+        ]
+      }
+    }
+  }
+}
